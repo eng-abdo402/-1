@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كل عام وانتم بخير</title>
+    <style>
+        body {
+            background-image: url('https://res.cloudinary.com/dnsxjummx/image/upload/v1739403910/000/z4ln7ld7917pxld6tqky.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        h1 {
+            color: #ddbdbd;
+            font-size: 6vw;
+            margin-top: 20px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .a, .b, .c, .d {
+            font-size: 4vw;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            display: block;
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .a { color: black; background: rgba(0, 255, 127, 0.2); }
+        .b { color: blueviolet; background: rgba(138, 43, 226, 0.2); }
+        .c { color: black; background: rgba(127, 255, 0, 0.2); }
+        .d { color: rgb(247, 0, 210); background: rgba(255, 20, 147, 0.2); }
+
+        img {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-container {
+            margin: 20px auto;
+            padding: 15px;
+            background: rgba(179, 14, 14, 0.5);
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: rgb(18, 17, 19);
+        }
+
+        .personalized-message {
+            margin-top: 20px;
+            font-size: 4vw;
+            font-weight: bold;
+            color: rgba(188, 75, 244, 0.884);
+        }
+    </style>
+</head>
+<body>
+    <h1>بهايم صالح عوض الله</h1>
+    <div class="text-container">
+        <pre>   <img src="https://res.cloudinary.com/dnsxjummx/image/upload/v1739403975/000/tfimojwynocomghv3u7k.jpg" alt="صورة افتراضية">
+<img src="https://res.cloudinary.com/dnsxjummx/image/upload/v1739403908/000/kbbpj2wiukbqgonvgqhl.jpg" alt="صورة افتراضية">
+        <audio controls>
+
+             
+            <source src="https://res.cloudinary.com/dnsxjummx/video/upload/v1739403908/000/p1i1t7rplxmcvounxqdk.mp3" type="audio/mpeg">
+            <source src="https://res.cloudinary.com/dnsxjummx/video/upload/v1739403908/000/p1i1t7rplxmcvounxqdk.mp3" type="audio/wav">
+            <source src="https://res.cloudinary.com/dnsxjummx/video/upload/v1739403908/000/p1i1t7rplxmcvounxqdk.mp3" type="audio/ogg">
+        </audio></pre>
+
+        
+    </div>
+    <div class="a">اخوكم عبدو مصطفي يهنئكم بحلول شهر رمضان المبارك</div>
+    <div class="b">كل عام وانتم بخير يا بهايم رمضان كريم.</div>
+    <div class="c">نتمني لكم صوما مقبولا وافطارا شهيا</div>
+    <div class="d">ولا تنسونا من صالح دعاوتكم وادعوا بضمير ولا بلاش عشان هي بايظه لوحديها</div>
+
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="اكتب اسمك هنا ثنائي...">
+        <button onclick="showInput()">إرسال</button>
+    </div>
+    <div class="personalized-message" id="personalized-message"></div>
+    <script>
+        function showInput() {
+            const input = document.getElementById("user-input").value;
+            const message = document.getElementById("personalized-message");
+
+            // إضافة 20 شرطًا else if لكل كلمة مختلفة
+            if(input === "ملك اشرف") {
+                message.innerHTML = "رمضان كريم يا بودره!"; 
+            } else if(input === "عمر علاء") {
+                message.innerHTML = "رمضان كريم يا تفاحه او زوحليق!";
+            } else if(input === "فارس محمد") {
+                message.innerHTML = "رمضان كريم يا كورنيه;ll;!";
+            } else if(input === "داليا احمد ") {
+                message.innerHTML = "رمضان كريم يا كرتون!";
+            } else if(input === "هاجر عبدالعزيز") {
+                message.innerHTML = "رمضان كريم يا دبانه زززززز!";
+            } else if(input === "عبدالرحمن مصطفي ") {
+                message.innerHTML = "رمضان كريم يا عبدو_انا اللي عامل السايت اكيد مش هتريق علي نفسي!";
+            } else if(input === "اروي احمد") {
+                message.innerHTML = "رمضان كريم يا معزه ماااااااء!";
+            } else if(input === "محمد مصطفي ") {
+                message.innerHTML = "رمضان كريم يا قرد!";
+            } else if(input === "روجينا هاني ") {
+                message.innerHTML = " رمضان كريم يا  شوايه!";
+            } else if(input === "نوران سليمان") {
+                message.innerHTML = "رمضان كريم يا ابو قردان!";
+            } else if(input === "ندا حماده") {
+                message.innerHTML = "رمضان كريم يا تلاجه!";
+            } else if(input === "روان عادل ") {
+                message.innerHTML = "رمضان كريم يا مدام نوفيخه!";
+            } else if(input === "شهد محمود") {
+                message.innerHTML = "رمضان كريم يا ام اصيم!";
+            } else if(input === "ملك محمد") {
+                message.innerHTML = "رمضان كريم يا معلم رشدان او نسناسه!";
+            } else if(input === "محمد عبده") {
+                message.innerHTML = "رمضان كريم يا شواحه!";
+            } else if(input === "احمد محمد ") {
+                message.innerHTML = "رمضان كريم يا ابو عامر!";
+            } else if(input === "شهد سمير") {
+                message.innerHTML = "رمضان كريم يا حماره!";
+            } else if(input === "عمرو محمود") {
+                message.innerHTML = "رمضان كريم يا عموره!";
+            } else if(input === "محمد احمد") {
+                message.innerHTML = "رمضان كريم يا زلومه!";
+            } else if(input === "مروة") {
+                message.innerHTML = "كل عام وأنتِ بخير يا مروة!";
+            } else if(input === "خالد") {
+                message.innerHTML = "كل عام وأنت بخير يا خالد!";
+            } else if(input === "ليلى") {
+                message.innerHTML = "كل عام وأنتِ بخير يا ليلى!";
+          
+            } else {
+                message.innerHTML = " من فضلك أدخل اسمك.ثنائي كما في البطاقه";
+            }
+        }
+    </script>
+</body>
+</html>
