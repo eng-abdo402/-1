@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>كل عام وانتم بخير</title>
     <style>
-        body {
-            background-image: url('https://res.cloudinary.com/dnsxjummx/image/upload/v1739403910/000/z4ln7ld7917pxld6tqky.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            direction: rtl;
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
+       
+            body {
+    background-image: url('https://res.cloudinary.com/dnsxjummx/image/upload/v1739403910/000/z4ln7ld7917pxld6tqky.webp');
+    background-size: contain; /* يجعل الصورة تظهر بالكامل */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* يبقي الصورة ثابتة عند التمرير */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
 
         h1 {
             color: #ddbdbd;
@@ -41,6 +44,13 @@
             max-width: 600px;
             margin: auto;
         }
+        @media (max-width: 768px) {
+    body {
+        background-size: 100% auto;
+        background-attachment: scroll;
+    }
+}
+
 
         .a { color: black; background: rgba(0, 255, 127, 0.2); }
         .b { color: blueviolet; background: rgba(138, 43, 226, 0.2); }
